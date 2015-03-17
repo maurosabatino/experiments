@@ -1,0 +1,21 @@
+_book:
+    path: /books/
+    defaults: { _controller: AcmeDemoBundle:Book:index }
+
+_book_create:
+    path: /book/create
+    defaults: { _controller: AcmeDemoBundle:Book:create }
+
+_book_view:
+    path: /book/view/{id}
+    defaults: { _controller: AcmeDemoBundle:Book:view }
+    requirements:
+      id:  \d+
+
+_book_update:
+    path: /book/update
+    defaults: { _controller: AcmeDemoBundle:Book:update }
+
+_book_delete:
+    path: /book/delete
+    defaults: { _controller: AcmeDemoBundle:Book:delete }
